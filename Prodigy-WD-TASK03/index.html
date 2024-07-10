@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Tic Tac Toe Game</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="gamename">Tic Tac Toe Game</div>
+    </div>
+    <button onclick="start()" class="StartButton">
+        <span>PLAY NOW</span>
+    </button>
+    <div class="Gamebody">
+        <div class="image"><img src="excited.gif" alt="winner"></div>
+        <div class="box tp bl ">
+            <div class="textbox"></div>
+        </div>
+        <div class="box tp ">
+            <div class="textbox"></div>
+        </div>
+        <div class="box br tp ">
+            <div class="textbox"></div>
+        </div>
+        <div class="box tp bl">
+            <div class="textbox"></div>
+        </div>
+        <div class="box tp bb">
+            <div class="textbox"></div>
+        </div>
+        <div class="box tp br">
+            <div class="textbox"></div>
+        </div>
+        <div class="box tp bl bb">
+            <div class="textbox"></div>
+        </div>
+        <div class="box bb">
+            <div class="textbox"></div>
+        </div>
+        <div class="box tp br bb">
+            <div class="textbox"></div>
+        </div>
+    </div>
+    <div class="last">
+        <div class="checked"><span id="info">"X"</span></div>
+        <button onclick="resetGame()" class="shadow__btn">
+            Reset Game
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

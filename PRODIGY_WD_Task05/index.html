@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Weather-APP</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="nav">
+                <h1>MyWeatherApp</h1>
+                <div class="search">
+                    <input type="text" placeholder="Enter Your City Name" class="searchinput" />
+                    <button class="fa-solid fa-magnifying-glass" id="search-btn"></button>
+                </div>
+                <div class="location-not-found">
+                    <h1>Sorry, Location not found!!!</h1>
+                    <img src="Assets/404.png" alt="404 Error">
+                </div>
+            </div>
+            <div class="weather-body">
+                <div id="cityname">City-Name</div>
+                <div class="image">
+                    <img src="Assets/clear.png" alt="Weather_pic" class="weather-img">
+                    <p class="temperature">0<sup>°C</sup></p>
+                    <p class="title">Clear</p>
+                    <p class="description">Enjoy your life</p>
+                </div>
+            </div>
+            <div class="weather-content">
+                <div class="humditiy">
+                    <div class="humi">
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                        <span>Humditiy</span>
+                        <div class="percent">
+                            <p id="humi-dity">0<span>%</span></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="windspeed">
+                    <div class="windbox">
+                        <i class="fa-solid fa-wind"></i>
+                        <span>Wind Speed</span>
+                        <div class="percent">
+                            <p id="wind-speed">0<span>km/h</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/e7cb151641.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

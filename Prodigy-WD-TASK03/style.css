@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: max(100%, 100vw);
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.gamename {
+    height: 50px;
+    font-size: 34px;
+    color: rgb(13, 105, 224);
+    text-shadow: 0 0 10px rgb(13, 105, 224);
+}
+
+.Gamebody {
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: repeat(3, 15vw);
+    place-items: center;
+    margin: 10px auto;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    height: 15vw;
+    width: 15vw;
+}
+
+.textbox {
+    font-size: 34px;
+    align-self: center;
+    cursor: pointer;
+    height: 5vw;
+    width: 5vw;
+}
+
+.tp {
+    border-top: 0px;
+}
+
+.bl {
+    border-left: 0px;
+}
+
+.br {
+    border-right: 0px;
+}
+
+.bb {
+    border-bottom: 0px;
+}
+
+.checked {
+    font-size: 18px;
+}
+.box-x {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: rgb(228, 3, 3);
+    /* Your background color */
+    filter: drop-shadow(0 0 10px rgb(228, 3, 3));
+    color: black;
+    /* Text color */
+    text-shadow: 0 0 5px rgb(8, 88, 236);
+    /* Adjust color and blur radius */
+}
+
+#info {
+    font-size: 34px;
+}
+
+.box-o {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: rgb(6, 161, 6);
+    /* Your background color */
+    filter: drop-shadow(0 0 10px rgb(6, 161, 6));
+    /* Adjust color and spread radius */
+    color: black;
+    /* Text color */
+    text-shadow: 0 0 5px rgb(149, 236, 8);
+    /* Adjust color and blur radius */
+}
+
+.StartButton {
+    border: none;
+    position: relative;
+    width: 200px;
+    height: 73px;
+    padding: 0;
+    z-index: 2;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    -webkit-mask-size: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    transform: translateY(8px)
+}
+
+.StartButton:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0 0 0 white;
+    transition: all 2s ease;
+}
+
+.StartButton:hover:after {
+    box-shadow: 0px -13px 56px 12px #ffffffa6;
+}
+
+.StartButton span {
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 100;
+    left: 50%;
+    top: 39%;
+    letter-spacing: 3px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: black;
+    transition: all 2s ease;
+}
+
+.StartButton:hover span {
+    color: white;
+}
+
+.StartButton:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
+}
+
+.StartButton:hover:before {
+    width: 100%;
+}
+
+.shadow__btn {
+    padding: 10px 40px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.shadow__btn {
+    background: rgb(0, 140, 255);
+    box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0, 140, 255),
+        0 0 25px rgb(0, 140, 255),
+        0 0 50px rgb(0, 140, 255),
+        0 0 100px rgb(0, 140, 255);
+}
+.image {
+    display: none; /* Initially hide the image container */
+    position: absolute; /* Position it absolutely within .Gamebody */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 10; /* Ensure it's above the game grid */
+}
+
+.image.active {
+    display: block; /* Show the image container when active */
+}
+
+.image img {
+    max-width: 80%; /* Adjust maximum width of the image */
+    max-height: 80%; /* Adjust maximum height of the image */
+    position: absolute; /* Position the image within .image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20; /* Ensure image is above overlay */
+}
+@media only screen and (max-width: 768px){
+    .textbox {
+        font-size: 24px;
+    }
+}
