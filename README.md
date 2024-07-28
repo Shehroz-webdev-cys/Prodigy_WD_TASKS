@@ -4,15 +4,15 @@
 
 This repository contains several projects completed during my internship at Prodigy Infotech:
 
-Stopwatch Web App: A web-based stopwatch application with functionalities including start, stop, reset, lap timer, and clear lap records.
+1. **Stopwatch Web App**: A web-based stopwatch application with functionalities including start, stop, reset, lap timer, and clear lap records.
+   
+2. **Weather App**: A weather application that fetches current weather information based on user input (city or location) using a weather API.
 
-Weather App: A weather application that fetches current weather information based on user input (city or location) using a weather API.
+3. **Tic Tac Toe App**: A classic Tic Tac Toe game implemented in the browser using HTML for structure, CSS for styling, and JavaScript for game logic.
 
-Tic Tac Toe App: A classic Tic Tac Toe game implemented in the browser using HTML for structure, CSS for styling, and JavaScript for game logic.
+4. **E-commerce Website**: An online store platform allowing users to browse products, add items to their cart, and complete purchases.
 
-E-commerce Website: An online store platform allowing users to browse products, add items to their cart, and complete purchases.
-
-Portfolio Website: A personal portfolio website showcasing projects, skills, and contact information, with a particle network animation background and a responsive design.
+5. **My Portfolio**: A simple personal portfolio website showcasing projects, skills, and contact information.
 
 ## Technologies Used
 
